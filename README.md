@@ -52,7 +52,7 @@ cat < file2
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+file1 file2 differ: 1 byte 1line 
 comm file1 file2
  ## OUTPUT
 
