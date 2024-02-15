@@ -42,10 +42,8 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
-chanchal singhvi
-c.k. shukla
-s.n dasgupta
-sumit chakrobarty
+![image](https://github.com/Pooja-sri45/OS-Linux-commands-Shell-script/assets/147081893/dc44baee-90dd-42bf-b421-6bc49c266612)
+
 
 
 
