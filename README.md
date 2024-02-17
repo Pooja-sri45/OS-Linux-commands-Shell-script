@@ -43,10 +43,8 @@ s.n. dasgupta
 cat < file1
 ## OUTPUT
 
-chanchal singhvi
-c.k. shukla
-s.n. dasgupta
-sumit chakrobarty
+![image](https://github.com/Pooja-sri45/OS-Linux-commands-Shell-script/assets/147081893/5d0ef8be-7f2c-45b8-bc1f-be1586b3a5b0)
+
 
 
 
@@ -71,28 +69,16 @@ file1 file2 differ: byte 1, line 1
 
 comm file1 file2
  ## OUTPUT
-     anil aggarwal
-     barun sengupta
-chanchal singhvi
-               c.k. shukla
-     lalit chowdury
-               s.n. dasgupta
-sumit chakrobarty
+   ![image](https://github.com/Pooja-sri45/OS-Linux-commands-Shell-script/assets/147081893/19631fe5-281e-4e6b-b522-6830ac1bd5c3)
+
 
 
 
  
 diff file1 file2
 ## OUTPUT
-1c1,2
-< chanchal singhvi
----
-> anil aggarwal
-> barun sengupta
-2a4
-> lalit chowdury
-4d5
-< sumit chakrobarty
+![image](https://github.com/Pooja-sri45/OS-Linux-commands-Shell-script/assets/147081893/2ee442f2-4510-43de-a29f-eb8f8d868bfd)
+
 
 
 
