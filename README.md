@@ -50,12 +50,13 @@ cat < file1
 
 cat < file2
 ## OUTPUT
+'''
 anil aggarwal
 barun sengupta
 c.k. shukla
 lalit chowdury
 s.n. dasgupta
-
+'''
 
 
 # Comparing Files
