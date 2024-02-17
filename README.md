@@ -42,7 +42,11 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
-![image](https://github.com/Pooja-sri45/OS-Linux-commands-Shell-script/assets/147081893/dc44baee-90dd-42bf-b421-6bc49c266612)
+
+chanchal singhvi
+c.k. shukla
+s.n. dasgupta
+sumit chakrobarty
 
 
 
@@ -50,13 +54,12 @@ cat < file1
 
 cat < file2
 ## OUTPUT
-'''
 anil aggarwal
 barun sengupta
-c.k. shukla
+c.k.shukla
 lalit chowdury
-s.n. dasgupta
-'''
+s.n.gupta
+
 
 
 # Comparing Files
