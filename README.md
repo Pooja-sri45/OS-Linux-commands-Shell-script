@@ -63,13 +63,14 @@ s.n.gupta
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
-file1 file2 differ: byte 1, line 1
+![image](https://github.com/Pooja-sri45/OS-Linux-commands-Shell-script/assets/147081893/cd3a8b0f-d367-4c76-b251-c58244256897)
+
 
 
 
 comm file1 file2
- ## OUTPUT
-   ![image](https://github.com/Pooja-sri45/OS-Linux-commands-Shell-script/assets/147081893/19631fe5-281e-4e6b-b522-6830ac1bd5c3)
+## OUTPUT
+![image](https://github.com/Pooja-sri45/OS-Linux-commands-Shell-script/assets/147081893/19631fe5-281e-4e6b-b522-6830ac1bd5c3)
 
 
 
@@ -104,16 +105,14 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
-Hel
-Thi
+![image](https://github.com/Pooja-sri45/OS-Linux-commands-Shell-script/assets/147081893/067e9661-0637-448c-affe-4728ec780c21)
+
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
-1001
-1002
-1003
+![image](https://github.com/Pooja-sri45/OS-Linux-commands-Shell-script/assets/147081893/f1beb83a-4f12-4448-ab88-0a7e14b67cce)
 
 
 
