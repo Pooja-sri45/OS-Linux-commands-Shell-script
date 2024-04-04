@@ -42,8 +42,10 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
-
-![image](https://github.com/Pooja-sri45/OS-Linux-commands-Shell-script/assets/147081893/5d0ef8be-7f2c-45b8-bc1f-be1586b3a5b0)
+```chanchal singhvi
+c.k. shukla
+s.n. dasgupta
+sumit chakrobarty```
 
 
 
@@ -52,25 +54,31 @@ cat < file1
 
 cat < file2
 ## OUTPUT
-anil aggarwal
+```anil aggarwal
 barun sengupta
-c.k.shukla
+c.k. shukla
 lalit chowdury
-s.n.gupta
+s.n. dasgupta```
 
 
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
-![image](https://github.com/Pooja-sri45/OS-Linux-commands-Shell-script/assets/147081893/cd3a8b0f-d367-4c76-b251-c58244256897)
-
+```file1 file2 differ: char 1, line 1```
 
 
 
 comm file1 file2
 ## OUTPUT
-![image](https://github.com/Pooja-sri45/OS-Linux-commands-Shell-script/assets/147081893/19631fe5-281e-4e6b-b522-6830ac1bd5c3)
+```anil aggarwal
+        barun sengupta
+        c.k. shukla
+chanchal singhvi
+c.k. shukla
+        lalit chowdury
+                s.n. dasgupta
+sumit chakrobarty```
 
 
 
@@ -78,9 +86,16 @@ comm file1 file2
  
 diff file1 file2
 ## OUTPUT
-![image](https://github.com/Pooja-sri45/OS-Linux-commands-Shell-script/assets/147081893/2ee442f2-4510-43de-a29f-eb8f8d868bfd)
-
-
+```--- file1
++++ file2
+@@ -1,4 +1,5 @@
+-chanchal singhvi
++anil aggarwal
++barun sengupta
+ c.k. shukla
++lalit chowdury
+ s.n. dasgupta
+-sumit chakrobarty```
 
 
 
@@ -105,7 +120,8 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
-![image](https://github.com/Pooja-sri45/OS-Linux-commands-Shell-script/assets/147081893/067e9661-0637-448c-affe-4728ec780c21)
+```Hel
+Thi```
 
 
 
