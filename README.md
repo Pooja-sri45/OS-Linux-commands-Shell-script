@@ -624,17 +624,38 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
+ ```
+www.yahoo.com
+www.google.com
+www.mrcet....com
+```
 
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
+```
+www.yahoo.com
+www.google.com
+www.mrcet....com
+```
 
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
+```
+bench.py
+file21
+file22
+file23
+hello.c
+hello.js
+newfile
+readme.txt
+urllist.txt
+```
 
 
 mkdir backupdir
@@ -643,18 +664,40 @@ mv backup.tar backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
+```
+-rw-r--r-- user/group 0 2024-02-25 14:30:00 file1.txt
+drwxr-xr-x user/group 0 2024-02-25 14:30:00 directory1/
+-rw-r--r-- user/group 1024 2024-02-25 14:30:00 directory1/file2.txt
+-rw-r--r-- user/group 2048 2024-02-25 14:30:00 directory1/file3.txt
+```
+
 
 
 tar -xvf backup.tar
 ## OUTPUT
+```
+x file1.txt
+x directory1/
+x directory1/file2.txt
+x directory1/file3.txt
+gzip backup.tar
+```
+
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
+```
+ backup.tar.gz
+gunzip backup.tar.gz
+```
  
 gunzip backup.tar.gz
 ## OUTPUT
+```
+backup.tar
+```
 
  
 # Shell Script
@@ -665,6 +708,9 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
+```
+echo Hello World
+```
 
  
 cat << stop > herecheck.txt
@@ -677,6 +723,11 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
+```
+hello in this world
+i cant stop
+for this non stop movement
+```
 
 
 cat < scriptest.sh 
@@ -715,26 +766,48 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
+```
+File name is ./scriptest.sh
+File name is scriptest.sh
+First arg. is 1
+Second arg. is 2
+Third arg. is 3
+Fourth arg. is
+The $@ is 1 2 3
+The $\# is $#
+The $$ is 124
+```
 
  
 ls file1
 ## OUTPUT
+```
+file1
+```
 
 echo $?
 ## OUTPUT 
+```
+0
+```
+echo $?
+## OUTPUT
+```
+1
+```
 ./one
 bash: ./one: Permission denied
- 
 echo $?
 ## OUTPUT 
- 
+```
+0
+```
 abcd
- 
 echo $?
- ## OUTPUT
-
-
- 
+## OUTPUT
+```
+127
+```
 # mis-using string comparisons
 
 cat < strcomp.sh 
@@ -764,6 +837,17 @@ echo "$val1 is less than $val2"
 fi
 ```
 ##OUTPUT
+```
+\#!/bin/bash
+val1=baseball
+val2=hockey
+if [ $val1 \> $val2 ]
+then
+echo "$val1 is greater than $val2"
+else
+echo "$val1 is less than $val2"
+fi
+```
 
 
 
@@ -771,6 +855,9 @@ chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
+```
+You are the owner of the /etc/passwd file
+```
 
 
 # check file ownership
@@ -798,6 +885,11 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+```
+"/root The object exists, is it a file?"
+"No,/root it is not a file!"
+```
+
 
 # check if with file location
 cat>ifnested.sh 
@@ -844,6 +936,14 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
+```
+
+
+“/home/sec The object exists, is it a file?”
+“No,/home/sec it is not a file!”
+“But /home/sec/.bash_history is a file!”
+
+```
 
 
 
@@ -888,6 +988,10 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
+```
+“The test value 10 is greater than 5”
+“The values are different”
+```
 
 # check if a file
 cat > ifnested.sh 
@@ -937,6 +1041,11 @@ $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
 ##OUTPUT
+```
+“/home/sec The object exists, is it a file?”
+“No,/home/sec it is not a file!”
+“But /home/sec/.bash_history is a file!”
+```
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -965,6 +1074,10 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
+```
+./elifcheck.sh: line 1: #!/bin/bash: No such file or directory
+Sorry, you are not allowed here
+```
 
 
 # testing compound comparisons
@@ -981,6 +1094,15 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
+```
+Welcome Ram
+Please enjoy your visit
+Welcome Rahim
+Please enjoy your visit
+Special testing account
+gganesh, Do not forget to logout when you're done
+Sorry, you are not allowed here
+```
 
 # using the case command
 cat >casecheck.sh 
@@ -1092,6 +1214,13 @@ done
 $ chmod 755 forin1.sh
 
 ## OUTPUT
+```
+word:I
+word:dont know if thisll
+word:work
+```
+
+
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -1113,6 +1242,15 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
+```
+Visit beautiful Hyderabad
+Visit beautiful Alampur
+Visit beautiful Basara
+Visit beautiful Warangal
+Visit beautiful Adilabad
+Visit beautiful Bhadrachalam
+Visit beautiful Khammam
+```
 
 
 cat forctype.sh 
@@ -1140,6 +1278,14 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
+```
+The value of i is 1
+The value of i is 2
+The value of i is 3
+The value of i is 4
+The value of i is 5
+```
+
 
 cat fornested1.sh 
 ```bash
@@ -1158,6 +1304,14 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
+ ```
+1 - 5
+2 - 4
+3 - 3
+4 - 2
+5 - 1
+```
+
 
  
 cat forbreak.sh 
@@ -1175,6 +1329,23 @@ done
 echo "The for loop is completed“
 ```
 ## OUTPUT
+```
+Starting loop 1:
+ Inside loop: 1
+ Inside loop: 2
+ Inside loop: 3
+Starting Loop 2:
+ Inside loop: 1
+ Inside loop: 2
+ Inside loop: 3
+Starting Loop 3:
+ Inside loop: 1
+ Inside loop: 2
+ Inside loop: 3
+
+
+
+```
 
 $ chmod 755 forbreak.sh
  
